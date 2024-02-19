@@ -1,7 +1,7 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass{beamer}
 
 % Thème
-\usetheme{Marburg}
+\usecolortheme{whale}
 
 % Packages
 \usepackage{lmodern}
@@ -19,13 +19,15 @@
   \end{beamercolorbox}
 }
 
-% Barre de navigation
-\setbeamertemplate{subsection in sidebar shaded}{}
-\setbeamertemplate{title in sidebar shaded}{}
-\setbeamertemplate{author in sidebar shaded}{}
-
 % Barre d'en tête
-\setbeamertemplate{headline}[CambridgeUS]
+\setbeamertemplate{headline}{%
+  \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex]{section in head/foot}%
+    \insertsectionnavigationhorizontal{\paperwidth}{}{}%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex]{subsection in head/foot}%
+    \insertsubsectionnavigationhorizontal{\paperwidth}{}{}%
+  \end{beamercolorbox}%
+}
 
 
 % Titre
@@ -41,12 +43,12 @@
 
 %TODO: Ajouter planing forum
 
-\section{Planing du forum 2024 des MP2I-MPI}
+\section{Planing}
 
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
+        \includegraphics[width=0.9\textwidth]{ressource_diapo/Planing_2024.png}
         \caption{Planing du forum 2024 des MP2I-MPI}
     \end{figure}
 \end{frame}
@@ -58,7 +60,7 @@
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
+        \includegraphics[width=0.9\textwidth]{ressource_diapo/Parcoursup_2023.png}
         \caption{Resultats Parcoursup}
     \end{figure}
 \end{frame}
@@ -68,19 +70,23 @@
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
+        \includegraphics[width=0.9\textwidth]{ressource_diapo/mention 2023-2024.png}
         \caption{Statistiques des mentions}
     \end{figure}
 \end{frame}
 
-\subsection{admission en école d'ingénieur}
+\subsection{Place en école d'ingénieur}
 
 \begin{frame}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{admission en école d'ingénieur}
-    \end{figure}
+    \begin{itemize}
+        \item \textbf{X} : 24 places
+        \item \textbf{ENS} : ? places (Ulm : ?, Lyon : ?, Saclay : 8, Rennes : ?)
+        \item \textbf{Centrales} : 118 places
+        \item \textbf{Mines-Ponts} : 124 places
+        \item \textbf{Mines-Télécom} : 141 places
+        \item \textbf{CCINP} : 202 places (+22 autres écoles ratachées à CCINP)
+        \item \textbf{E3A - polytech} : + de 160 places
+    \end{itemize}
 \end{frame}
 
 \section{Différentes filières}
@@ -112,7 +118,7 @@
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
+        \includegraphics[width=0.9\textwidth]{ressource_diapo/Internat_Gay-Lussac_1.jpg}
         \caption{L'internat}
     \end{figure}
 \end{frame}
@@ -122,7 +128,7 @@
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
+        \includegraphics[width=0.9\textwidth]{ressource_diapo/emploi_du_temps.png}
         \caption{emploi du temps}
     \end{figure}
 \end{frame}
@@ -148,26 +154,94 @@
 
 \section{Mathématiques}
 
-\subsection{programme officiel}
+\subsection{programme officiel S1}
 
 \begin{frame}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{programme officiel}
-    \end{figure}
+    \textbf{Premier semestre}
+    \begin{itemize}
+        \item Raisonnements et vocabulaire ensembliste
+        \item Compléments de calcul algébrique et de trigonométrie
+        \item Nombres complexes
+        \item Techniques fondamentales de calcul différentiel et intégral
+        \item Nombres réels et suites géométriques
+        \item Fonctions d'une variable réelle : continuité, dérivabilité, convexité
+        \item Arithmétique dans l'ensemble des entiers relatifs
+        \item Structures algébriques usuelles
+        \item Calcul matriciel et systèmes linéaires
+        \item Polynômes et fractions rationnelles
+    \end{itemize}
+\end{frame}
+
+\subsection{programme officiel S2}
+
+\begin{frame}
+    \textbf{Deuxième semestre}
+    \begin{itemize}
+        \item Analyse asymptotique
+        \item Espaces vectoriels et applications linéaires
+        \item Matrices
+        \item Groupe symétrique et déterminants
+        \item Intégration
+        \item Dénombrement
+        \item Probabilités
+        \item Espaces préhilbertiens réels
+        \item Procédés sommatoires discrets
+        \item Fonctions de deux variables
+    \end{itemize}
 \end{frame}
 
 \section{Physique}
 
-\subsection{programme officiel}
+\subsection{programme officiel S1}
 
 \begin{frame}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{programme officiel}
-    \end{figure}
+    \begin{enumerate}[label=\textbf{\arabic*.},leftmargin=*]
+        \item \textbf{Ondes et signaux}
+        \begin{enumerate}[label=1.\arabic*.]
+            \item Formation des images
+            \item Signaux et composants électriques
+            \item Circuit linéaire du premier ordre et du deuxième ordre
+            \item Propagation d'un signal
+        \end{enumerate}
+        \item \textbf{Mouvements et interactions}
+        \begin{enumerate}[label=2.\arabic*.]
+            \item Description et paramétrage du mouvement d’un point
+            \item Lois de Newton
+            \item Approche énergétique du mouvement d'un point matériel
+            \item Mouvement de particules chargées dans des champs électrique et magnétostatique, uniformes et stationnaires 
+        \end{enumerate}
+        \item \textbf{L’énergie : conversions et transferts}
+        \begin{enumerate}[label=3.\arabic*.]
+            \item Descriptions microscopique et macroscopique d’un système : modèle du gaz parfait et de la phase condensée incompressible indilatable
+            \item Bilan d’énergie pour un système thermodynamique
+        \end{enumerate}    
+    \end{enumerate}
+\end{frame}
+
+\subsection{programme officiel S2}
+
+\begin{frame}
+    \begin{enumerate}[label=\textbf{\arabic*.},leftmargin=*]
+        \item \textbf{Ondes et signaux}
+        \begin{enumerate}[label=1.\arabic*.]
+            \item Régime sinusoïdal forcé
+            \item Filtrage linéaire
+            \item  Induction et forces de Laplace (champ magnétique, action d'un champ magnétique, lois de l'induction, Circuit fixe dans un champ magnétique qui dépend du temps et Circuit mobile dans un champ magnétique stationnaire)
+            \item Introduction à la physique quantique
+        \end{enumerate}
+        \item \textbf{Mouvements et interactions}
+        \begin{enumerate}[label=2.\arabic*.]
+            \item Moment cinétique d’un point matériel
+            \item Mouvements dans un champ de gravitation newtonien
+            \item Mouvement d’un solide
+        \end{enumerate}
+        \item \textbf{L’énergie : conversions et transferts}
+        \begin{enumerate}[label=3.\arabic*.]
+            \item Deuxième principe. Bilans d'entropie
+            \item Transitions de phases
+            \item Machines thermiques 
+        \end{enumerate}    
+    \end{enumerate}
 \end{frame}
 
 \section{Informatique}
@@ -175,11 +249,29 @@
 \subsection{programme officiel}
 
 \begin{frame}
+    \begin{enumerate}[label=\arabic*]
+        \item Méthodes de programmation (S1) (S2) (S3-4)
+        \item Récursivité et induction (S1) (S2)
+        \item Structures de données (S1) (S2) (S3-4)
+        \item Algorithmique (S2) (S3-4)
+        \item Gestion des ressources de la machine (S1) (S3-4)
+        \item Logique (S2) (S3-4)
+        \item Bases de données (S2)
+        \item Langages formels (S3-4)
+        \item Décidabilité et classes de complexité (S3-4)
+        \item Langage C et OCaml
+    \end{enumerate}
+\end{frame}
+
+\subsection{Langage : Python}
+
+\begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{programme officiel}
+        \includegraphics[width=0.9\linewidth]{ressource_diapo/fibo_python.PNG}
+        \caption{Deux versions de la fonction fibonacci en python}
     \end{figure}
+    Le Python n'est pas au programme d'informatique, mais il peut apparaître dans des épreuves de mathématiques ou de physique lors des concours.
 \end{frame}
 
 \subsection{Langage : OcamL}
@@ -187,8 +279,8 @@
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{OcamL}
+        \includegraphics[width=0.9\linewidth]{ressource_diapo/fibo_ocaml.PNG}
+        \caption{Deux versions de la fonction fibonacci en ocaml}
     \end{figure}
 \end{frame}
 
@@ -197,64 +289,48 @@
 \begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{C}
-    \end{figure}
-\end{frame}
-
-\subsection{Premier semestre}
-
-\begin{frame}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{Premier semestre}
-    \end{figure}
-\end{frame}
-
-\subsection{Deuxième semestre}
-
-\begin{frame}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{Deuxième semestre}
-    \end{figure}
-\end{frame}
-
-\section{conseils}
-
-\subsection{avant la prépa}
-
-\begin{frame}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{avant la prépa}
-    \end{figure}
-\end{frame}
-
-\subsection{pendant la prépa}
-
-\begin{frame}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\textwidth]{ressource_diapo/place older.png}
-        \caption{pendant la prépa}
+        \includegraphics[width=0.9\linewidth]{ressource_diapo/fibo_c.PNG}
+        \caption{Deux versions de la fonction fibonacci en C}
     \end{figure}
 \end{frame}
 
 \section{FAQ}
 
-\begin{frame}
-    Exemple de question :
+\subsection{avant la prépa}
 
+\begin{frame}
+    \textbf{Avant la prépa :}
     \begin{itemize}
-        \item Comment se passe la vie en prépa ?
-        \item Quels sont les débouchés après une prépa ?
-        \item Comment se passe les concours ?
-        \item Quels sont les matières enseignées ?
-        \item Comment se passe la vie en internat ?
+        \item \textbf{Sélection} : \textit{Mention au bac ? Niveau/classement en terminale ? Lettre de motivation ?}
+        \item \textbf{Choix des spécialité} : \textit{Quelle spécialité choisir pour une prépa MP2I-MPI? NSI, SI, Maths, Physique, Informatique? Maths expertes? pratique de l'informatique avant la prépa?}
+        \item \textbf{Préparer la prépa} : \textit{Comment se préparer à la prépa? Réviser le programme de terminale? S'avancer sur le programme de prépa? Profiter de ses vacances? S'entrainer à coder? Lire les livres de français?}
+    \end{itemize}
+\end{frame}
+
+\subsection{pendant la prépa}
+
+\begin{frame}
+    \textbf{En prépa :}
+    \begin{itemize}
+        \item \textbf{Rythme} : \textit{Emploi du temps ? Vitesses des cours ? Rythme le week-end ? En vacances ? Travail en dehors des cours ? Activité sportive ?}
+        \item \textbf{Matières} : \textit{LV2 ? TIPE ? Khôlles ? Philo ? Anglais ? Maths ? Physique ? Chimie ? Info ?}
+        \item \textbf{L'ambiance} : \textit{Les profs sont méchants ? Entraide ? Amis ? Concurrence dans la classe ?}
+        \item \textbf{Se loger} : \textit{Internat ? Appartement ?  Collocation ? Durée de trajet ? Rentrer le week-end ?}
+        \item \textbf{Internat} : \textit{Ouvert le week-end/vacances ? Inter-externé/externe/interne ? Ambiance et travail ?}
+        \item \textbf{Débouchés} : \textit{Concours ? Réorientation ? 5/2 ? Quels métiers ?}
+    \end{itemize}
+\end{frame}
+
+\subsection{en MP2I}
+
+\begin{frame}
+    \textbf{En MP2I :}
+    \begin{itemize}
+        \item \textbf{Info théorique} : \textit{TD sur papier ? Algo sur papier ? Quel est le programme ? Que faites-vous ?}
+        \item \textbf{Info pratique} : \textit{OCaml ? C ? Programmation fonctionnelle/impérative ?}
+        \item \textbf{Math} : \textit{Quelle est le programme en maths comparé aux MPSI ?}
+        \item \textbf{Physique} : \textit{Programme ? Chimie ? Python ? }
+        \item \textbf{Choix de spé} : \textit{MPI/MP/PSI ? Université ? Classe étoilée ?}
     \end{itemize}
 \end{frame}
 
